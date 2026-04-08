@@ -1,0 +1,78 @@
+.saved-page {
+  padding: 130px 0 90px;
+}
+
+.saved-shell {
+  display: grid;
+  gap: 24px;
+}
+
+.saved-header {
+  max-width: 700px;
+}
+
+.saved-header h1 {
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  line-height: 1;
+}
+
+.saved-header p {
+  margin-top: 14px;
+  color: var(--text-muted);
+}
+
+.saved-list {
+  display: grid;
+  gap: 16px;
+}
+
+.saved-item {
+  display: grid;
+  gap: 12px;
+}
+
+.unsave-btn {
+  justify-self: start;
+  padding: 12px 16px;
+  border-radius: var(--radius-full);
+  background: rgba(199, 74, 52, 0.08);
+  color: var(--error);
+  font-weight: 700;
+}
+
+.saved-empty {
+  display: grid;
+  gap: 14px;
+  padding: 28px;
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  border: var(--border-subtle);
+  box-shadow: var(--shadow-sm);
+}
+
+.saved-empty p {
+  color: var(--text-muted);
+}
+
+.saved-skeleton-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.saved-skeleton {
+  min-height: 220px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(90deg, rgba(16, 32, 51, 0.05), rgba(16, 32, 51, 0.12), rgba(16, 32, 51, 0.05));
+  background-size: 200% 100%;
+  animation: saved-pulse 1.8s infinite linear;
+}
+
+@keyframes saved-pulse {
+  from {
+    background-position: 0% 0;
+  }
+
+  to {
+    background-position: 200% 0;
+  }
+}
