@@ -40,7 +40,5 @@ npm run dev
 The application will be available at `http://localhost:3000`.
 
 ### 4. Seed Data
-To populate the database with sample places, click the "Browse All" button on the home page or call `POST /api/places/seed` from the backend. (I've included a seed route in `server.js`).
-Actually, I'll add a helper button in the Search page if the database is empty.
-Wait, I already added a `seedSampleData` in `api.js`. I can call it once in SearchPage if its empty.
-Actually, for simplicity, just mention the API call.
+To populate the database with sample places, click the "Browse All" button on the home page or call `POST /api/places/seed` from the backend. (included a seed route in `server.js`).
+
